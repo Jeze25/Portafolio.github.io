@@ -40,10 +40,10 @@ Soy un desarrollador Full Stack Junior con experiencia en:
 
 ## 📧 Contacto
 
-- **Email**: [tu@email.com](mailto:tu@email.com)
+- **Email**: [javilesvidal@gmail.com](mailto:javilesvidal@gmail.com)
 - **GitHub**: [@Jeze25](https://github.com/Jeze25)
-- **LinkedIn**: [Mi Perfil](https://linkedin.com)
-- **Twitter**: [@tuTwitter](https://twitter.com)
+- **LinkedIn**: [Jesús Aviles Vidal](https://www.linkedin.com/in/jesús-aviles-vidal-9061803b9?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+- **Contacto**: [javilesvidal@gmail.com](mailto:javilesvidal@gmail.com)
 
 ## 🚀 Cómo Ejecutar Localmente
 
