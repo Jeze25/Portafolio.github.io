@@ -130,8 +130,8 @@ Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo como base pa
 ## 📞 Soporte
 
 Si tienes preguntas o necesitas ayuda, siéntete libre de contactarme:
-- 📧 Email: tu@email.com
-- 💬 GitHub Issues: [Crear Issue](https://github.com/Jeze25/Portafolio.github.io/issues)
+- 📧 Email: jeze4510@gmail.com
+- 💬 GitHub:(https://github.com/Jeze25/Portafolio.github.io/issues)
 
 ## 🙏 Agradecimientos
 
