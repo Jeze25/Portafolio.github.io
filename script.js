@@ -142,3 +142,84 @@ if (savedTheme === 'light') {
 }
 
 console.log('Portfolio cargado correctamente ✨');
+
+
+
+// fondo de estrellas 
+
+<!-- Canvas -->
+<canvas id="bg"></canvas>
+
+<!-- Three.js -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+
+  // Escena
+  const scene = new THREE.Scene();
+
+  // Cámara
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
+
+  camera.position.z = 5;
+
+  // Render
+  const renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('#bg'),
+    antialias:true
+  });
+
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  // Estrellas
+  const starsGeometry = new THREE.BufferGeometry();
+  const starsCount = 3000;
+
+  const positions = [];
+
+  for(let i = 0; i < starsCount; i++){
+    positions.push(
+      (Math.random() - 0.5) * 2000,
+      (Math.random() - 0.5) * 2000,
+      (Math.random() - 0.5) * 2000
+    );
+  }
+
+  starsGeometry.setAttribute(
+    'position',
+    new THREE.Float32BufferAttribute(positions, 3)
+  );
+
+  const starsMaterial = new THREE.PointsMaterial({
+    color: 0xffffff,
+    size: 1.2
+  });
+
+  const stars = new THREE.Points(starsGeometry, starsMaterial);
+
+  scene.add(stars);
+
+  // Animación
+  function animate(){
+    requestAnimationFrame(animate);
+
+    stars.rotation.y += 0.0005;
+    stars.rotation.x += 0.0002;
+
+    renderer.render(scene, camera);
+  }
+
+  animate();
+
+  // Responsive
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
