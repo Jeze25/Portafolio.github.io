@@ -147,11 +147,6 @@ console.log('Portfolio cargado correctamente ✨');
 
 // fondo de estrellas 
 
-<!-- Canvas -->
-<canvas id="bg"></canvas>
-
-<!-- Three.js -->
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
 
   // Escena
