@@ -729,18 +729,7 @@ a:hover {
 ::-webkit-scrollbar-track {
     background: var(--background);
 }
-style>
-  body{
-    margin:0;
-    overflow:hidden;
-    background:#050816;
-  }
 
-  canvas{
-    position:fixed;
-    top:0;
-    left:0;
-  }
 ::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 4px;
